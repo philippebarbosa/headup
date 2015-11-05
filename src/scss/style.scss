@@ -1,0 +1,27 @@
+/* Overide any MountCSS variable here
+---------------------------------- */
+
+
+/* _Import all
+---------------------------------- */
+
+// @import 'mountCSS/scss/style';
+
+.toto {
+    columns: 4;
+    @media (min-width : 768px ) {
+        columns: 3;
+    }
+}
+
+.tata {
+    color: blue;
+    @media (min-width : 768px ) {
+        color: green;
+    }
+}
+
+
+.another {
+    display: none;
+}
