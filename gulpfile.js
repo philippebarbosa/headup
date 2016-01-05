@@ -104,7 +104,7 @@ gulp.task('jsScriptsBuild', function() { // Move and minify main js script file
 
 // default task (development)
 gulp.task('default', ['css', 'jsScripts'], function () {
-    gulp.watch('src/scss/*.scss', ['css']);
+    gulp.watch('src/scss/*/*.scss', ['css']);
     gulp.watch('src/js/index.js', ['jsScripts']);
 });
 
