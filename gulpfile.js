@@ -57,7 +57,9 @@ gulp.task('css', function () {
 
     var processors = [
         autoprefixer({browsers: ['last 2 version']}),
-        mqpacker
+        mqpacker({
+            sort: true
+        })
     ];
     return gulp.src('src/scss/style.scss')
         .pipe(sass({ outputStyle : output }).on('error', sass.logError))
